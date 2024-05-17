@@ -19,7 +19,7 @@ const glados = async () => {
     return [
       'Checkin OK',
       `${checkin.message}`,
-      `Left Days ${Number(status.data.leftDays)}`,
+      // `Left Days status.data.hasOwnProperty("leftDays")? ${Number(status.data.leftDays)} : 0`,
     ]
   } catch (error) {
     return [
