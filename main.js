@@ -34,8 +34,8 @@ const notify = async (contents) => {
   const token = process.env.NOTIFY
   if (!token || !contents) return
   await fetch(`https://bark-for-notifications.realzuanzuan.workers.dev/${token}/glados/${contents}`, {
-    method: 'GET',
-    headers: { 'content-type': 'application/json' },
+    method: 'POST',
+    // headers: { 'content-type': 'application/json' },
     // body: JSON.stringify({
     //   token,
     //   title: contents[0],
