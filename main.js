@@ -33,7 +33,7 @@ const glados = async () => {
 const notify = async (contents) => {
   const token = process.env.NOTIFY
   if (!token || !contents) return
-  await fetch(`https://bark-for-notifications.realzuanzuan.workers.dev/${token}/glados/${contents}`, {
+  await fetch(`https://bark-for-notifications.realzuanzuan.workers.dev/${token}/glados/${contents}?icon=https://raw.githubusercontent.com/zuanzuanshao/ImageHostingService/main/uPic/20240810133326.png`, {
     method: 'POST',
     // headers: { 'content-type': 'application/json' },
     // body: JSON.stringify({
