@@ -1,6 +1,6 @@
 const glados = async () => {
   const cookie = process.env.GLADOS
-  if (!cookie) return
+  if (!cookie) return ["no cookie"]
   try {
     const headers = {
       'cookie': cookie,
